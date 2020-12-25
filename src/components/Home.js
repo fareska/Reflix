@@ -10,7 +10,7 @@ class Home extends Component {
             users: {
                 user1: { backgroundColor: 'Blue' },
                 user2: { backgroundColor: 'Green' },
-                user3: { backgroundColor: 'Yellow' },
+                user3: { backgroundColor: 'purple' },
                 user4: { backgroundColor: 'Red' },
             },
         }
@@ -18,7 +18,6 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
                 <div id="homeComponent">
                     <header>WHO'S WATCHING?</header>
                     <div id='users'>
@@ -36,7 +35,6 @@ class Home extends Component {
                         </Link>
                     </div>
                 </div>
-            </div>
         )
     }
 }
