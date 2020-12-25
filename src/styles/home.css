@@ -1,16 +1,36 @@
+#root {
+    background-color: black;
+}
+
 #users{
     padding-top: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     display: grid;
-    padding-left: 40px;
 }
 
 header{
     margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: white;
+    padding-left: 20px;
+}
+
+#main-links{
+}
+
+#logo{  
+    display: absolute;
+    right: 0;
 }
 
 .user{
+    text-align: center;
+    color:white;
     width: 160px;
     height: 160px;
     align-content: center;

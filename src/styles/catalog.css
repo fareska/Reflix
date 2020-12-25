@@ -3,17 +3,22 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
-}
-
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-#rentedMovies{
+    color: white;
+    text-align: center;
+ }
+    
+    
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #rentedMovies{
         display:  inline-grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 10px;
-}
+        background-color: white;
+        text-align: center;
+     }
+    
