@@ -14,12 +14,13 @@ class Catalog extends Component {
     }
 
     rentIt = id => {
-        // this.props.method(id)
-        let arr = [...this.state.rentedMovies]
-        arr.push(id)
-        this.setState({ rentedMovies: arr }, function () {
-            this.setState({ budget: (this.state.budget - 3) })
-        })
+        if(this.state.budget > 3){
+            let arr = [...this.state.rentedMovies]
+            arr.push(id)
+            this.setState({ rentedMovies: arr }, function () {
+                this.setState({ budget: (this.state.budget - 3) })
+            })
+        }
 
     }
     refound = id => {
@@ -49,7 +50,6 @@ class Catalog extends Component {
     render() {
         let movies = this.props.movies
         let rentedMovies = this.props.rentedMovies
-        console.log(this.props.searchVal)
 
         return (
             <div>
